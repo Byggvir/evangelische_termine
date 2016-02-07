@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+// Plugin Evangelische Termine
+
+// Styles for Evangelische Termine 
+// 
+// Author: Thomas Arend
+// Date: 28.05.2015
+// Version 0.6.2
+//
+// Changes 0.6.2
+// First version vor github
+
+// Styles for embeding Evangelische Termine in WordPress
+
+.evt-link-vid {
+	font-size : 0.5em;
+} 
+
+/*### Veranstaltungen ###*/
+
+.evt-monthbar {
+	text-align : center;
+	font-weight: bold;
+	background-color: #600000;
+	color: white;
+	font-size: 1.25em;
+}
+
+.evt-daybar {
+	font-weight: bold;
+	background-color: #202020;
+	color: white;
+	font-size: 0.9em;
+}
+
+.evt-widget {
+  font-size : 0.75em;
+
+}
+.evt-widget .evt-monthbar {
+        font-size: 1.25em;
+}
+
+
+.evt-widget .evt-daybar {
+        font-size: 0.9em;
+}
+
+.evt-article .evt-monthbar {
+        font-size: 1.25em;
+}
+
+.evt-article .evt-daybar {
+        font-size: 1em;
+}
+
+.evt-article td {
+ padding: 0.6em;
+}
+
+.evt-article .evt-title {
+ width : 15em;
+}
+.evt-widget .evt-title {
+ width : 10em;
+}
+
+.evt-widget td {
+ padding:  0.2em;
+}
+
+.evt-day-Mo , .evt-day-Mi , .evt-day-Mi , .evt-day-Do, .evt-day-Fr, .evt-day-Sa {
+	color: white;
+}
+
+.evt-day-So {
+	color: red;
+}
+
+.evt-startend {
+	color: black;
+}
+
+.White {
+	background-color: white;
+}
+.Grey {
+	background-color:whitesmoke;
+}
+.evt-span-title {
+	font-weight: bold;
+}
+.evt-span-person {
+	color : darkgrey;
+}
+
+.evt-span-description {
+	font-style:italic;
+}
