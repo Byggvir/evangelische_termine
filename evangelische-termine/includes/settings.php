@@ -2,13 +2,19 @@
 
 /**
  * @package Evangelische-Termine
- * @version 0.6.2
+ * @version 0.6.3
  * @author Thomas Arend <thomas@arend-rhb.de>
  * @copyright 2014-2015 Thomas Arend Rheinbach Germany
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
 /**
+ * Changes 0.6.3
+ * Small spelling corrections
+ *
+ */
+
+ /**
  * Changes 0.6.2
  * First version vor github
  *
@@ -175,7 +181,7 @@ if(!class_exists('EVT_Termine_Settings'))
 	{
 
             // Think of this as help text for the section.
-            echo "\n<p>Hier k&ouml;nnen die Vorgabewerte des Aufrufes des severseitigen Scripts zur XML-Ausgabe der Events angepasst werden.</p>";
+            echo "\n<p>Hier k&ouml;nnen die Vorgabewerte des Aufrufes des serverseitigen Scripts zur XML-Ausgabe der Events angepasst werden.</p>";
         }
         
         /**
