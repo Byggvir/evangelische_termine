@@ -65,17 +65,19 @@ function postprocess_xml ( $inxml , $codeplace = 'article' ) {
       // evt-day : allgemeine Formatierung 
       // evt-day-Mo .. evt-day-So : Formatierung für den Wochentag
    
-      if ((string) $vera->LITURG_BEZ !='' ) { $holiday=" evt-day-holiday"; }
-      eles
+      if ((string) $vera->LITURG_BEZ !='' ) 
+      { 
+        $evtclass="evt-daybar evt-day-holiday"; 
+      }
+      else
       {
-         $holiday="";
+         $evtclass="evt-daybar evt-day-" . (string) $vera->WOCHENTAG_START_KURZ ;
       };
       
       $oldDay = (string) $vera->START_DATUM;
       $outhtml .= "<!-- $oldDay -->" ;
   
-      $outhtml .= "\n<tr>\n<td class=\"evt-daybar evt-day-"
-	. (string) $vera->WOCHENTAG_START_KURZ . $holiday
+      $outhtml .= "\n<tr>\n<td class=\"" . $evtclass
 	. "\" colspan=\"3\" >" . (string) $vera->WOCHENTAG_START_LANG . ", "
 	. (string) $vera->START_DATUM;
       if ((string) $vera->LITURG_BEZ !='' ) 
