@@ -5,8 +5,11 @@
 // Styles for Evangelische Termine 
 // 
 // Author: Thomas Arend
-// Date: 28.05.2015
-// Version 0.6.2
+// Date: 24.03.2018
+// Version 0.6.3
+//
+// Changes 0.6.3
+// New class evt-day-holiday
 //
 // Changes 0.6.2
 // First version vor github
@@ -75,6 +78,10 @@
 }
 
 .evt-day-So {
+	color: red;
+}
+
+.evt-day-holiday {
 	color: red;
 }
 

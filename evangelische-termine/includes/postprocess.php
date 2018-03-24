@@ -6,6 +6,9 @@
  * @copyright 2014-2015 Thomas Arend Rheinbach Germany
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
+ * Changes 06.3
+ * Include evt-day-holiday when LITURG_BEZ not blank
+ *
  * Changes 0.6.2
  * First version for github
  *
@@ -62,10 +65,17 @@ function postprocess_xml ( $inxml , $codeplace = 'article' ) {
       // evt-day : allgemeine Formatierung 
       // evt-day-Mo .. evt-day-So : Formatierung für den Wochentag
    
+      if ((string) $vera->LITURG_BEZ !='' ) { $holiday=" evt-day-holiday"; }
+      eles
+      {
+         $holiday="";
+      };
+      
       $oldDay = (string) $vera->START_DATUM;
       $outhtml .= "<!-- $oldDay -->" ;
+  
       $outhtml .= "\n<tr>\n<td class=\"evt-daybar evt-day-"
-	. (string) $vera->WOCHENTAG_START_KURZ
+	. (string) $vera->WOCHENTAG_START_KURZ . $holiday
 	. "\" colspan=\"3\" >" . (string) $vera->WOCHENTAG_START_LANG . ", "
 	. (string) $vera->START_DATUM;
       if ((string) $vera->LITURG_BEZ !='' ) 
