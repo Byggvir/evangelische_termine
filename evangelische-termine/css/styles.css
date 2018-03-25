@@ -1,107 +1,84 @@
-@charset "UTF-8";
+@charset UTF-8;
 
-// Plugin Evangelische Termine
-
-// Styles for Evangelische Termine 
-// 
-// Author: Thomas Arend
-// Date: 24.03.2018
-// Version 0.6.3
-//
-// Changes 0.6.3
-// New class evt-day-holiday
-//
-// Changes 0.6.2
-// First version vor github
-
-// Styles for embeding Evangelische Termine in WordPress
-
-.evt-link-vid {
-	font-size : 0.5em;
-} 
-
-/*### Veranstaltungen ###*/
-
-.evt-monthbar {
-	text-align : center;
-	font-weight: bold;
-	background-color: #249610;
-	color: white;
-	font-size: 1.25em;
-}
-
-.evt-daybar {
-	font-weight: bold;
-	background-color: #124808;
-	color: white;
-	font-size: 0.9em;
-}
-
-.evt-widget {
-  font-size : 0.75em;
-
-}
-.evt-widget .evt-monthbar {
-        font-size: 1.25em;
-}
-
-
-.evt-widget .evt-daybar {
-        font-size: 0.9em;
-}
-
-.evt-article .evt-monthbar {
-        font-size: 1.25em;
-}
-
-.evt-article .evt-daybar {
-        font-size: 1em;
-}
-
-.evt-article td {
- padding: 0.6em;
-}
-
-.evt-article .evt-title {
- width : 15em;
-}
-.evt-widget .evt-title {
- width : 10em;
-}
-
-.evt-widget td {
- padding:  0.2em;
-}
-
-.evt-day-Mo , .evt-day-Mi , .evt-day-Mi , .evt-day-Do, .evt-day-Fr, .evt-day-Sa {
-	color: white;
-}
-
-.evt-day-So {
-	color: red;
-}
-
-.evt-day-holiday {
-	color: red;
-}
-
-.evt-startend {
-	color: black;
+.Grey {
+background-color:whitesmoke;
 }
 
 .White {
-	background-color: white;
+background-color:white;
 }
-.Grey {
-	background-color:whitesmoke;
+
+.evt-article .evt-daybar {
+font-size:1em;
 }
-.evt-span-title {
-	font-weight: bold;
+
+.evt-article .evt-title {
+width:15em;
 }
-.evt-span-person {
-	color : darkgrey;
+
+.evt-article td {
+padding:.6em;
+}
+
+.evt-day-Mo,.evt-day-Mi,.evt-day-Mi,.evt-day-Do,.evt-day-Fr,.evt-day-Sa {
+color:white;
+}
+
+.evt-day-So,.evt-day-holiday {
+color:red;
+}
+
+.evt-daybar {
+background-color:#124808;
+color:white;
+font-size:.9em;
+font-weight:bold;
+}
+
+.evt-link-vid {
+font-size:.5em;
+}
+
+.evt-monthbar {
+background-color:#249610;
+color:white;
+font-size:1.25em;
+font-weight:bold;
+text-align:center;
 }
 
 .evt-span-description {
-	font-style:italic;
+font-style:italic;
+}
+
+.evt-span-person {
+color:darkgrey;
+}
+
+.evt-span-title {
+font-weight:bold;
+}
+
+.evt-startend {
+color:black;
+}
+
+.evt-widget {
+font-size:.75em;
+}
+
+.evt-widget .evt-daybar {
+font-size:.9em;
+}
+
+.evt-widget .evt-monthbar,.evt-article .evt-monthbar {
+font-size:1.25em;
+}
+
+.evt-widget .evt-title {
+width:10em;
+}
+
+.evt-widget td {
+padding:.2em;
 }
