@@ -1,7 +1,14 @@
 @charset UTF-8;
+/*
+Styles for Plugin Evangelische Termine 
+
+Author: Thomas Arend
+Date: 24.03.2018
+Version 0.6.3
+*/
 
 .Grey {
-background-color:whitesmoke;
+background-color:#F5F5F5;
 }
 
 .White {
