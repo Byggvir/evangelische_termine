@@ -11,14 +11,15 @@
  * 
  * Delete all traces of the plugin when the admin is uninstlling the plugin.
  */
- 
+
 // If uninstall.php is not called from wordpress exit
 
 //Security check!
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+defined('ABSPATH') or die('No script kiddies please!');
 
-if ( !defined('WP_UNINSTALL_PLUGIN') ) {
-
+if (!defined('WP_UNINSTALL_PLUGIN'))
+ {
+  
 ?>
 <html>
 <head>
@@ -30,22 +31,22 @@ if ( !defined('WP_UNINSTALL_PLUGIN') ) {
 </body>
 </html>
 <?php
-
-exit () ;
-
-}
+  
+  exit();
+  
+ } //!defined('WP_UNINSTALL_PLUGIN')
 
 // Delete options from options table
 
 require_once(sprintf("%s/includes/global.php", dirname(__FILE__)));
 
-global
-      	  $EVT_DefValues;
+global $EVT_DefValues;
 
 // 
-foreach ($EVT_DefValues as $key => $value) {
-	       unregister_setting('evt-group', 'evt_'.$key);
-	       delete_option('evt_'.$key);
-	}
+foreach ($EVT_DefValues as $key => $value)
+ {
+  unregister_setting('evt-group', 'evt_' . $key);
+  delete_option('evt_' . $key);
+ } //$EVT_DefValues as $key => $value
 
 ?>  

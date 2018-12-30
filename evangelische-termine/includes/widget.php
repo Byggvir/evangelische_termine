@@ -3,8 +3,8 @@
   Plugin:	TA-Evangelische-Termine
   Autor:	Thomas Arend / Rheinbach
   E-Mail:	thomas@arend-rhb.de
-  Version:	0.6.2
-  Stand:	07.02.2016
+  Version:	0.6.3
+  Stand:	30.12.2018
 
   EvT Teaser Widget
   -------------------
@@ -15,6 +15,10 @@
   This widget is based on the code example in the Widget_API
   See http://codex.wordpress.org/Widgets_API
 
+  
+  Changes 0.6.3
+  Replace deprecated function with __construct()
+  
   Changes 0.6.2
   First version for github
 
@@ -38,21 +42,21 @@ class EVT_Calendar_Widget extends WP_Widget {
 	
 	/** constructor */
 	function __construct() {
-		parent::WP_Widget( 
-			/* Base ID */ 'evt_calendar_widget' ,
-			/* Name */ 'EVT Calendar Widget' ,
+		parent::__construct( 
+			'evt_calendar_widget' , 
+			$name = 'EVT Calendar Widget' ,
 			array( 'description' => 'Zeigt eine &Uuml;bersicht der Termine eines Veranstalters aus dem Evangelischen Termine Kalender in einem Widget an! ' ) );
 	}
 
 	/** @see WP_Widget::widget */
 	function widget( $args, $instance ) {
 
-      	global
-	  $EVT_DefLabels ,
-      	  $EVT_CalenderSettingNames, 
-      	  $EVT_ServerSettingNames,
-      	  $EVT_QuerySettingNames ,
-      	  $EVT_DefValues;
+      global
+        $EVT_DefLabels ,
+        $EVT_CalenderSettingNames, 
+        $EVT_ServerSettingNames,
+        $EVT_QuerySettingNames ,
+        $EVT_DefValues;
  
 		$wg_atts = $args;
 
