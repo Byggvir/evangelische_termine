@@ -67,6 +67,7 @@ function get_withoutcurl ( $url )
 
   $page='';
   $fd = fopen($url,"r");
+  $returned = "";
   if ($fd) 
   {
     while(!feof($fd))

@@ -44,7 +44,7 @@ class EVT_Calendar_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct( 
 			'evt_calendar_widget' , 
-			$name = 'EVT Calendar Widget' ,
+			'EVT Calendar Widget' ,
 			array( 'description' => 'Zeigt eine &Uuml;bersicht der Termine eines Veranstalters aus dem Evangelischen Termine Kalender in einem Widget an! ' ) );
 	}
 
@@ -67,13 +67,14 @@ class EVT_Calendar_Widget extends WP_Widget {
 		if ($wg_atts['script'] == '' ) $wg_atts['script'] = 'xml.php';
 		$termine=postprocess_xml(evt_getevents($wg_atts,$EVT_QuerySettingNames),'widget');
 
-		echo $before_widget;
+// echo $before_widget;
 		if ( $wg_atts['title'] )
-			echo $before_title . $wg_atts['title'] . $after_title;
+// echo $before_title . $wg_atts['title'] . $after_title;
+			echo $wg_atts['title'];
 			echo $termine; // Hier ist der richtige Patz um den erzeugten HTML Code auszugeben. 
 			echo "<p style=\"font-size: x-small;\">Powered by Evangelische Termine Plugin - &copy Thomas Arend, Rheinbach</p>";
 
-		echo $after_widget;
+// echo $after_widget;
 	}
 
 	/** @see WP_Widget::update */
