@@ -62,24 +62,22 @@ function evt_calendar($atts) {
 	evt_getevents($sc_atts,$EVT_QuerySettingNames)
   );
 
-  /* Debugging 
-  foreach ($sc_atts as $key => $value) {
-    $termine .= "<p>$key = $value</p>\n"; 
-  } // foreach
-  */
-  
  return "
 	<!-- Begin shortcode Ev. Termine -->
 	<div class=\"evt-eventtab\">
 	$eventheading
 	$termine
 	</div>
-	<p style=\"font-size: x-small;\">Powered by Evangelische Termine Plugin - &copy Thomas Arend, Rheinbach</p>
+	<p style=\"font-size: x-small;\">Powered by Evangelische Termine Plugin - &copy; Thomas Arend, Rheinbach</p>
 	<!-- End shortcode Ev. Termine -->
 	";
 } else { // if is_sigular
-  return "";
+  return "<p>Terminplan in Einzelansicht</p>";
 }
 }
+
+// Add shortcode
+
+add_shortcode( 'evtcalendar', 'evt_calendar' );
 
 ?>

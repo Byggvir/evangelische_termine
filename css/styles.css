@@ -1,91 +1,128 @@
-@charset UTF-8;
+@charset "UTF-8";
+
 /*
-Styles for Plugin Evangelische Termine 
+
+Plugin Evangelische Termine
+
+Styles for Evangelische Termine 
 
 Author: Thomas Arend
 Date: 24.03.2018
 Version 0.6.3
+
+Changes 0.6.3
+New class evt-day-holiday
+
+Changes 0.6.2
+First version vor github
+
+Styles for embedding Evangelische Termine in WordPress
 */
 
-.Grey {
-background-color:#F5F5F5;
-}
+.evt-link-vid {
+	font-size : 0.5em;
+} 
 
-.White {
-background-color:white;
-}
+/*### Veranstaltungen ###*/
 
-.evt-article .evt-daybar {
-font-size:1em;
-}
-
-.evt-article .evt-title {
-width:15em;
-}
-
-.evt-article td {
-padding:.6em;
-}
-
-.evt-day-Mo,.evt-day-Mi,.evt-day-Mi,.evt-day-Do,.evt-day-Fr,.evt-day-Sa {
-color:white;
-}
-
-.evt-day-So,.evt-day-holiday {
-color:red;
+.evt-monthbar {
+	text-align : center;
+	font-weight: bold;
+/*	background-color: #249610;
+	color: white;
+*/	font-size: 1.25em;
 }
 
 .evt-daybar {
-background-color:#124808;
-color:white;
-font-size:.9em;
-font-weight:bold;
-}
-
-.evt-link-vid {
-font-size:.5em;
-}
-
-.evt-monthbar {
-background-color:#249610;
-color:white;
-font-size:1.25em;
-font-weight:bold;
-text-align:center;
-}
-
-.evt-span-description {
-font-style:italic;
-}
-
-.evt-span-person {
-color:darkgrey;
-}
-
-.evt-span-title {
-font-weight:bold;
-}
-
-.evt-startend {
-color:black;
+	font-weight: bold;
+/*	background-color: #124808;
+	color: white;
+*/	font-size: 0.9em;
 }
 
 .evt-widget {
-font-size:.75em;
+  margin :0.5em;
+  height : 10em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size : 0.75em;
+  transition: transform .2s;
+
 }
+
+.evt-widget:hover {
+      background-color : white;
+      height: 60em;
+    
+}
+.evt-widget .evt-monthbar {
+        font-size: 1.25em;
+}
+
 
 .evt-widget .evt-daybar {
-font-size:.9em;
+        font-size: 0.9em;
 }
 
-.evt-widget .evt-monthbar,.evt-article .evt-monthbar {
-font-size:1.25em;
+.evt-article .evt-monthbar {
+        font-size: 1.25em;
 }
 
+.evt-article .evt-daybar {
+        font-size: 1em;
+}
+
+.evt-article td {
+ padding: 0.6em;
+}
+
+.evt-article .evt-title {
+ width : 25em;
+}
 .evt-widget .evt-title {
-width:10em;
+ /* width : 100%em;*/
 }
 
 .evt-widget td {
-padding:.2em;
+ padding:  0.2em;
+}
+
+.evt-day-Mo , .evt-day-Mi , .evt-day-Mi , .evt-day-Do, .evt-day-Fr, .evt-day-Sa {
+/*	color: white;
+*/
+}
+
+.evt-day-So {
+	color: red;
+}
+
+.evt-day-holiday {
+	color: red;
+}
+
+.evt-place {
+	width: 10em;
+	color: black;
+}
+
+.evt-startend {
+	width: 6em;
+	color: black;
+}
+
+.White {
+	background-color: white;
+}
+.Grey {
+	background-color:whitesmoke;
+}
+.evt-span-title {
+	font-weight: bold;
+}
+.evt-span-person {
+	color : darkgrey;
+}
+
+.evt-span-description {
+	font-style:italic;
 }

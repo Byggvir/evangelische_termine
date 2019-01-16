@@ -72,7 +72,7 @@ class EVT_Calendar_Widget extends WP_Widget {
 // echo $before_title . $wg_atts['title'] . $after_title;
 			echo $wg_atts['title'];
 			echo $termine; // Hier ist der richtige Patz um den erzeugten HTML Code auszugeben. 
-			echo "<p style=\"font-size: x-small;\">Powered by Evangelische Termine Plugin - &copy Thomas Arend, Rheinbach</p>";
+			echo "<p style=\"font-size: x-small;\">Powered by Evangelische Termine Plugin - &copy; Thomas Arend, Rheinbach</p>";
 
 // echo $after_widget;
 	}

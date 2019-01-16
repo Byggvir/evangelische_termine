@@ -1,0 +1,35 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<meta/>
+<Export>
+<Veranstaltung>
+<ID Label="Datum-ID"/>
+<START Label="am/von"/>
+<END Label="bis"/>
+<SUBTITLE Label="Untertitel"/>
+<allDay/>
+<_event_ID Label="Veranstaltungs-ID"/>
+<_event_TITLE Label="Titel"/>
+<_event_EVENTTYPE db="4" Label="Art der Veranstaltung / Kategorie"/>
+<_event_PEOPLE db="0" Label="Zielgruppe"/>
+<_event_SHORT_DESCRIPTION Label="Beschreibung"/>
+<_event_LONG_DESCRIPTION/>
+<_event_LINK Label="Internetadresse (eigene Infos im Internet)"/>
+<_event_EMAIL Label="Email"/>
+<_event_REGION_ID db=""/>
+<_event_MUSIC_KAT_ID/>
+<_event_KOLLEKTE db=""/>
+<_event_USER_ID Label="Veranstalter-ID"/>
+<_event_KOLL_DESCR Label="Kurzbeschreibung der Kollekte"/>
+<_place_NAME Label="Name des Veranstaltungsortes"/>
+<_place_STREET_NR Label="Strasse, Nr."/>
+<_place_ZIP Label="Postleitzahl"/>
+<_place_CITY Label="postalischer Ort"/>
+<_person_NAME Label="Name des Ansprechpartners"/>
+<_person_EMAIL Label="Email des Ansprechpartners"/>
+<_person_CONTACT Label="Kontaktinformationen des Ansprechpartners"/>
+</Veranstaltung>
+</Export>
+</root>

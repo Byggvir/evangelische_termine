@@ -55,7 +55,7 @@ function postprocess_xml ( $inxml , $codeplace = 'article' ) {
  
     $i++; $i%2==0 ? $colorswitch = 'White' : $colorswitch = 'Grey';
 
-    if ((string)$vera->monthbar != '0') 
+    if ((string)$vera->monthbar != '') 
       $outhtml .= "\n<tr><th class=\"evt-monthbar\" colspan=\"3\">" . (string)$vera->monthbar . "</th></tr>";
     // Prüfen, ob der Termin an einem neuen Tag beginnt
     if ( $oldDay != (string)$vera->START_DATUM ) 
@@ -107,7 +107,7 @@ function postprocess_xml ( $inxml , $codeplace = 'article' ) {
     $outhtml .= "\n</td>\n<td class=\"evt-place\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop=\"name\">" 
       . (string)$vera->_place_NAME 
       . "</span><br />" 
-      . (string)$vera->_place_CITY . "</br />" ; 
+      . (string)$vera->_place_CITY . "<br />" ; 
     $outhtml .= htmlmakelink("weitere Infos", "http://". get_option('evt_host') . "/veranstaltung_im_detail" . (string) $vera->ID .".html");  
     $outhtml .= "\n</td>\n</tr>\n" ;
   
