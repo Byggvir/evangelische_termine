@@ -6,8 +6,8 @@ Plugin URI: http://byggvir.de/wordpress-plugin-evt-veranstaltungen/
 Description: Dieses Plugin stellt eine Schnittstelle zu den Termindatenbanken der evangelischen Landeskirchen und angeschlossenen Organisationen bereit, die die Datenbank "Evangelische Termine" im Internet nutzen. Die Termine können mit dem Shortcode evtcalendar in Seiten und Artikel eingebunden werden. Daneben steht ein Widget für die Anzeige der Termine in den Seitenleisten zur Verfügung. 
 
 Author: Thomas Arend
-Version: 2019.0.0
-Date: 30.12.2018
+Version: 2019.0.1
+Date: 12.06.2019
 Author URI: http://byggvir.de/
 License: GPL 3 or later
 
@@ -23,7 +23,7 @@ description and examples
 
 /**
  * @package TA-Evangelische-Termine
- * @version 0.6.4
+ * @version 2019.0.1
  * @author Thomas Arend <thomas@arend-rhb.de>
  * @copyright 2014-2019 Thomas Arend Rheinbach Germany
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
