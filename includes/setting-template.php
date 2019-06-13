@@ -40,8 +40,6 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
   <h2>Vorgabewerte<h2>
   
   <form method="post" action="options.php"> 
-    <?php @settings_fields('evt-group'); ?>
-    <?php @do_settings_fields('evt-group'); ?>
-    <?php do_settings_sections('evt_termine'); ?>
-    <?php @submit_button(); ?>
+    <?php settings_fields('evt-group'); ?>
+    <?php submit_button(); ?>
   </form>
